@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
 using System.Collections.Generic;
 
 namespace BlogDatabase
@@ -59,15 +58,7 @@ namespace BlogDatabase
     {
         static void Main(string[] args)
         {
-            using (var db = new BloggingContext())
-            {
-                var blog = new Blog { Name = "Blog" };
-                db.Blogs.Add(blog);
-                db.SaveChanges();
-
-                Console.WriteLine("Press any key to exit...");
-                Console.ReadKey();
-            }
+         
         }
     }
 }
